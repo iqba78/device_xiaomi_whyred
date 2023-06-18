@@ -11,15 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Superior stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-# Superior Properties
+# derp Properties
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
+USE_LEGACY_BOOTANIMATION := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Inherit from whyred device
