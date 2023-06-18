@@ -48,8 +48,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-superior
+    $(DEVICE_PATH)/overlay
 
 # Powerhint
 PRODUCT_COPY_FILES += \
